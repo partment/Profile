@@ -5,11 +5,12 @@
         <meta author="PartMent">
         <meta name="renderer" content="webkit">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         <title>PartMent</title>
         <link rel="shortcut icon" href="assets/partment-icon.png">
         <link rel="stylesheet" href="assets/common.css">
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="./assets/is.min.js"></script>
         <script src="./assets/jQueryRotate.js"></script>
         <script src="./assets/animate.js"></script>
         <script>
@@ -17,6 +18,13 @@
                 $("*").contextmenu(function () {
                     return false;
                 });
+                if(is.mobile()) {
+                    var width = $(window).width();
+                    $(".wrap").css("height","400px");
+                    $(".info").css("width",width).css("height","300px");
+                    $(".info-icon").css("height","300px");
+                    $(".info-description").css("font-size","12px").css("width","calc(100% - 50px);");
+                }
             });
         </script>
     </head>
