@@ -18,7 +18,7 @@ body {
     transition: linear .2s;
 }
 .wrap {
-	position: fixed;
+    position: fixed;
     top: 50%;
     left: 50%;
     width: 50%;
@@ -43,7 +43,7 @@ body {
     display: inline-block;
 }
 .info-icon {
-	float: left;
+    float: left;
     width: 200px;
     height: 200px;
     background: url(partment-icon.png) center center no-repeat;
@@ -87,7 +87,7 @@ body {
     display: inline-block;
 }
 .social-icon a {
-	text-decoration: none;
+    text-decoration: none;
     color: #008787;
     cursor: pointer;
     margin: 0 5px 0 5px;
