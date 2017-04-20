@@ -63,7 +63,7 @@ body {
 }
 .info-description {
     position: relative;
-	float: right;
+    float: right;
     box-sizing: border-box;
     padding: 20px 5px 20px 5px;
     font-weight: bolder;
