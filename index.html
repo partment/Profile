@@ -11,18 +11,18 @@
         <link rel="stylesheet" href="assets/common.css">
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
         <script src="./assets/is.min.js"></script>
-        <script src="./assets/animate.js"></script>
+        <script src="./assets/common.js"></script>
+        <script src="./assets/lang.js"></script>
         <script>
             $(function () {
                 $("*").contextmenu(function () {
                     return false;
                 });
                 if(is.mobile()) {
-                    var width = $(window).width();
-                    $(".wrap").css("height","400px");
-                    $(".info").css("width",width).css("height","300px");
-                    $(".info-icon").css("height","300px");
-                    $(".info-description").css("font-size","12px");
+                    $(".wrap").css("width","100%").css("min-width","100%").css("height","400px");
+                    $(".info").css("height","300px");
+                    $(".info-icon").css("width","150px").css("height","150px").css("background-size","120px 120px")
+                    $(".info-description").css("font-size","15px").css("transform","translate(-50%, calc(-50% - 75px))");
                 }
             });
         </script>
@@ -30,10 +30,10 @@
     <body onselectstart="return false;">
         <div class="loading"></div>
         <div class="wrap">
-           <div class="title">Hi！I'm PartMent</div>
+            <div class="title">Hi！I'm PartMent</div>
             <div class="info">
                 <div class="info-icon"></div>
-                <div class="info-description">A human who comes from Taiwan and addicts to light novel.</br>Being love with English and Japanese, but also keeping learning them.</br>I'm a student now but also doing translation and web design.</br>My dream is becoming a novel writer.</br>These are my hobbies : ラノベ(light novel), アニメ(anime), ギャルゲーム(galgame)</div>
+                <div class="info-description"></div>
             </div>
             <div class="social">
                 <li class="social-icon"><a class="animated socicon-twitter" target="_blank" href="http://bit.ly/partment-twitter"></a></li>
@@ -41,7 +41,10 @@
                 <li class="social-icon"><a class="animated socicon-youtube" target="_blank" href="http://bit.ly/ptt-sub"></a></li>
                 <li class="social-icon"><a class="animated socicon-wordpress" target="_blank" href="http://blog.partment.ga"></a></li>
                 <li class="social-icon"><a class="animated socicon-github" target="_blank" href="https://github.com/partment"></a></li>
+                <li class="social-icon"><a class="animated socicon-twitch" target="_blank" href="https://twitch.tv/partment"></a></li>
+                <li class="social-icon"><a class="animated socicon-mail" target="_blank" href="mailto:partment@live.com"></a></li>
             </div>
         </div>
+        <div class="lang"></div>
     </body>
 </html>
