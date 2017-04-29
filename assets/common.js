@@ -4,9 +4,9 @@ $(window).load(function () {
         $(".wrap").stop().fadeIn(700);
         $(".lang").stop().fadeIn(700);
     }, 200);
-    setlang("tw");
 });
 $(function () {
+    setlang("tw");
     $(".lang").click(function () {
         if( $(this).data("region") === "tw") {
             setlang("us");
@@ -28,4 +28,5 @@ function setlang (region) {
     $(".title").html(lang[region+'-title']);
     $(".lang").html(lang[region+'-lang']).data("region", region);
     $(".info-description").html(lang[region+'-description']);
+    return;
 }
